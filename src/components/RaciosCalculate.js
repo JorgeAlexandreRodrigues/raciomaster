@@ -2,7 +2,6 @@ import React from 'react'
 import RaciosCalculateComponent from '../common/RaciosCalculateComponent'
 
 const RaciosCalculate = ({ data, setData }) => {
-  console.log(data)
 
   return (
     <>
