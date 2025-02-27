@@ -1,7 +1,7 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, Box } from "@mui/material";
 import Navbar from "./components/Navbar";
-import RaciosCalculate from "./components/RaciosCalculate";
 import MonthSelect from "./components/MonthSelect";
+import RaciosCalculate from "./components/RaciosCalculate";
 import Result from "./components/Result";
 import { useState } from "react";
 
@@ -18,7 +18,8 @@ function App() {
     otherIncome: 0,
     otherExpenses: 0,
     month: 1,
-  })
+  });
+
   return (
     <div className="App">
       <Navbar />
@@ -26,14 +27,16 @@ function App() {
         <Grid container spacing={5}>
           <Grid item xs={12} md={6}>
             <RaciosCalculate data={data} setData={setData} />
-            <MonthSelect data={data} setData={setData} />
+            <Box mt={2}> {/* Adiciona margem superior ao MonthSelect */}
+              <MonthSelect data={data} setData={setData} />
+            </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Result />
+            <Result data={data} />
           </Grid>
         </Grid>
       </Container>
-    </div >
+    </div>
   );
 }
 
