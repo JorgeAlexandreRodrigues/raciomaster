@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/raciomaster/static/js/main.d9894ec8.js",
+    "static/js/488.4f53c7ab.chunk.js": "/raciomaster/static/js/488.4f53c7ab.chunk.js",
+    "index.html": "/raciomaster/index.html",
+    "main.d9894ec8.js.map": "/raciomaster/static/js/main.d9894ec8.js.map",
+    "488.4f53c7ab.chunk.js.map": "/raciomaster/static/js/488.4f53c7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d9894ec8.js"
+  ]
+}
